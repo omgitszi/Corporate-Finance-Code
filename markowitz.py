@@ -214,12 +214,6 @@ def compute_key_portfolios(mu, cov, gamma=ridge_gamma):
 
 
 def plot_and_save_weights_comparison(weights_dict, out_path):
-    """Create a stacked bar chart comparing portfolio weights and save to disk.
-
-    weights_dict: dict with keys matching portfolio names and values are weight dicts
-    or pandas Series indexed by asset symbols.
-    """
-    # Build DataFrame where index is asset and columns are portfolios
     weights_comparison = pd.DataFrame(
         {
             "Max Sharpe (Un.)": pd.Series(weights_dict["cleaned_unconstrained_sharpe"]),
