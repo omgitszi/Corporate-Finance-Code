@@ -12,7 +12,7 @@ This repository contains a small pipeline for downloading monthly stock prices, 
 	python -m src.main
 	```
 
-	This will download price data (via `yfinance`), compute statistics and covariance matrices, run the Markowitz optimization, and save CSVs and PNGs into `src/output`.
+	This will download price data (via `yfinance`), compute statistics and covariance matrices, run the Markowitz optimization, and save CSVs and PNGs into `output`.
 
 ## Project structure (important files)
 - `src/download_data.py`  — download prices and build monthly returns
