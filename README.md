@@ -3,7 +3,7 @@
 This repository contains a small pipeline for downloading monthly stock prices, computing return summary statistics and annualised covariance/correlation matrices, and constructing Markowitz-style portfolios (efficient frontier, max Sharpe, min volatility) with saved plots.
 
 ## Quick overview
-- Source code lives under `src/src/` (yes, there's a nested package named `src`).
+- Source code lives under `src`.
 - The pipeline entrypoint is the package module `src.main`. From the `src/` folder run:
 
 	```powershell
