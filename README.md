@@ -1,4 +1,3 @@
-```markdown
 # Corporate-Finance-Code
 
 This repository contains a small pipeline for downloading monthly stock prices, computing return summary statistics and annualised covariance/correlation matrices, and constructing Markowitz-style portfolios (efficient frontier, max Sharpe, min volatility) with saved plots.
@@ -68,12 +67,4 @@ pip install adjustText
 - If you get a `FileNotFoundError` for `output/monthly_returns.csv`, ensure `download_data` was able to download data (internet required) and that you ran the orchestrator from `src/` as shown above.
 - If you hit missing-package errors, re-create the environment from `environment.yml` or run `pip install -r requirements.txt`.
 
-## Contributing / extending
-- The ticker list is editable at the top of `src/main.py` and is copied/used by `download_data.py` — if you want a single source-of-truth you can move the tickers into a small `config.py` and import it from both modules.
-- Outputs are intentionally small CSV/PNG artifacts so you can iterate locally and check the results quickly.
-
-## License
-This repo is provided as-is for educational use. Add your own license if you intend to redistribute.
-
 ```
-# Corporate-Finance-Code
