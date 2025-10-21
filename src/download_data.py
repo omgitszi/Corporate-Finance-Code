@@ -34,9 +34,7 @@ def get_monthly_returns(tickers, start_date, end_date):
     monthly_returns = pd.DataFrame(all_returns)
     return monthly_returns
 
-
-
-def main():
+if __name__ == "__main__":
     # company tickers of chosen assets for portfolio
     company_tickers = {
         'Google': 'GOOGL',
@@ -59,12 +57,12 @@ def main():
         'Lululemon': 'LULU'
     }
 
-    # defining time period 
+    # defining time period
     start_date = '2015-08-01'
     end_date = '2025-08-29'
 
     monthly_returns = get_monthly_returns(list(company_tickers.values()), start_date, end_date)
-    
+
     # saving data to CSV
     if monthly_returns is not None and not monthly_returns.empty:
         # Save to shared src/output (one level up from package)
@@ -78,6 +76,3 @@ def main():
         print(f"Available tickers: {list(monthly_returns.columns)}")
     else:
         print("Failed to retrieve monthly returns data.")
-
-if __name__ == "__main__":
-    main()
